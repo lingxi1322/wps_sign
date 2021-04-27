@@ -21,7 +21,7 @@
 ![创建仓库秘密变量](create_secrets.png)
 
 ## 执行 Action
-action设定为手动执行和定时执行，在 `Actions` -> `All Workflows` -> `wps_sign` 页面，有一个手动触发按钮 `Run workflow`, 点击可手动执行一次，除此之外，每天 6:06 会自动执行一次。
+action设定为手动执行和定时执行，在 `Actions` -> `All Workflows` -> `wps_sign` 页面，有一个手动触发按钮 `Run workflow`, 点击可手动执行一次，除此之外，每天 6:06 会自动执行一次。     
 ## 注意事项：
 - github action 的定时执行并非准时运行，而是比你设定的时间要**晚约几十分钟至两小时**（推测是要排队）。
 - yml配置文件中，定时设置的时间是UTC时间，如果要修改，要将北京时间减8小时，例如：修改为每天9:20执行，需要写 `- cron: "20 1 * * *"`
